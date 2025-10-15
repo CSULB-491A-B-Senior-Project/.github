@@ -4,22 +4,6 @@ Hi All this is our oraganization for crescendo, and it'll mostly be used for all
 
 ### Standard Git Protocol ###
 
-**NEW FEATURES NEW BRANCH**
-
-Keep all work that you are doing on new features and fixes on seperate branches. There will be others 
-working on the project with you and we need to maintain decoupled code. So Any feature or fix must have its own branch
-
-EX:
-
-`git branch v_1_10_feature_addition
- git checkout v_1_10_feature_addition`
-
-> note you don't have to name the branch as such, but you should be descriptive and versioning is commonplace 
-
-
-**COMMIT CHANGES LIKE SAVES**
-
-On any branch you are working on, it pays to have checkpoints in your work. It wont happen often but sometimes you go down the wrong path when writing solutions, and having an easy way to reset your code to previous
 
 **FETCH BEFORE YOU START**
 
@@ -32,6 +16,46 @@ EX
 usually followed by
 
 `git pull`
+
+These two commands will get you refreshed with current repository changes and update your local codebase to those changes.
+
+
+
+
+
+**NEW FEATURES NEW BRANCH**
+
+## USE JIRA BRANCH CREATION FIRST!!! ##
+
+If you can please utilize the create a branch feature of Jira Tasks as that will accomplish the following with minimal steps and be linked to the task in question. Naming convention follows
+
+
+
+Keep all work that you are doing on new features and fixes on seperate branches. There will be others 
+working on the project with you and we need to maintain decoupled code. So Any feature or fix must have its own branch
+
+EX:
+
+`git branch SCRUM-44-feature-addition-or-bug-fix`
+
+ `git checkout SCRUM-44-feature-addition-or-bug-fix`
+ 
+
+**For when JIRA branch creation is used**
+
+to utilize the branch you made through the Jira ticket, please use the 'switch' command for git as it will preform the above and link it remote branch tracking 
+
+EX:
+
+`git switch SCRUM-44-feature-addition-or-bug-fix`
+
+> note you don't have to name the branch as such, but you should be descriptive and versioning is commonplace
+
+
+**COMMIT CHANGES LIKE SAVES**
+
+On any branch you are working on, it pays to have checkpoints in your work. It wont happen often but sometimes you go down the wrong path when writing solutions, and having an easy way to reset your code to previous
+
 
 **PULL REQUESTS FOR MERGES**
 
